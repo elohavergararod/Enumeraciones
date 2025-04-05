@@ -12,11 +12,11 @@ public class HelloEnumsApp {
             System.out.println(demarcacion);
         }*/
 
-        String hola = "hola"; // La h tiene un valor ASCII mayor que la A, esta cadena es mayor
-        String adios = "Adios";
+        String cadena1 = "Alba"; // La h tiene un valor ASCII mayor que la A, esta cadena es mayor
+        String cadena2 = "Albasanz";
 
 
-        Ordenacion ordenacion = obtenerOrdenCadena1("hola", "Alba");
+        Ordenacion ordenacion = obtenerOrdenCadena1(cadena1, cadena2);
         System.out.println(ordenacion);
 
 
@@ -34,6 +34,8 @@ public class HelloEnumsApp {
     }
 
 
+    // ❗ Es recomendable salir de este método tras salir primero del bucle
+    // ❗ No es una buena práctica salir desde el bucle.
     private static boolean isGreaterString1ThanString2(String cadena1, String cadena2) {
         char[] carsCad1 = cadena1.toCharArray();
         int numCarsCad1 = cadena1.length();
@@ -48,7 +50,7 @@ public class HelloEnumsApp {
             char currentChar1 = carsCad1[posCurrentChar];
             char currentChar2 = carsCad2[posCurrentChar];
             if (currentChar1 > currentChar2) {
-                return true;
+                return true; // ❗
             }else if (currentChar1 < currentChar2) {
                 return false;
             }
@@ -57,6 +59,7 @@ public class HelloEnumsApp {
         }
 
         if (posCurrentChar == numMaxChar) {
+            // ❓ No entiendo la argumentación que está detrás de esta instrucción.
             return numCarsCad1 > numCarsCad2;
         }
 
