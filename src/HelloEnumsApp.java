@@ -12,11 +12,11 @@ public class HelloEnumsApp {
             System.out.println(demarcacion);
         }*/
 
-        String hola = "hola"; // La h tiene un valor ASCII mayor que la A, esta cadena es mayor
-        String adios = "Adios";
+//        String hola = "Albania"; // La h tiene un valor ASCII mayor que la A, esta cadena es mayor
+//        String adios = "Alba";
 
 
-        Ordenacion ordenacion = obtenerOrdenCadena1("hola", "Alba");
+        Ordenacion ordenacion = obtenerOrdenCadena1("Albania", "Alba");
         System.out.println(ordenacion);
 
 
@@ -62,5 +62,6 @@ public class HelloEnumsApp {
 
         return true;
     }
+    /* >>>>>>>>>>>> GRAZIE MILLE <<<<<<<<<<<<<<<<<<*/
 
 }
