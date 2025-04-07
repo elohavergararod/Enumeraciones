@@ -20,7 +20,7 @@ public class HelloEnumsApp {
         String adios = "Adios";
 
 
-        Ordenacion ordenacion = obtenerOrdenCadena1("zzz", "zebra");
+        Ordenacion ordenacion = obtenerOrdenCadena1("Alba", "Albania");
         System.out.println(ordenacion);
 
 
@@ -31,8 +31,8 @@ public class HelloEnumsApp {
         if (!cadena1.equalsIgnoreCase(cadena2)){
             isGreater = isGreaterString1ThanString2(cadena1,cadena2);
             return isGreater
-                    ? Ordenacion.MAYOR
-                    : Ordenacion.MENOR;
+                    ? Ordenacion.POSTERIOR
+                    : Ordenacion.ANTERIOR;
         }
         return Ordenacion.IGUAL;
     }
@@ -64,7 +64,7 @@ public class HelloEnumsApp {
             return numCarsCad1 < numCarsCad2;
         }*/
 
-        return numCarsCad1 < numCarsCad2;
+        return numCarsCad1 > numCarsCad2;
     }
 
 }

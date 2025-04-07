@@ -30,25 +30,25 @@ public class HelloEnumsTest {
         @Test
         public void testWhenHappyPath() {
                 Ordenacion result = HelloEnumsApp.obtenerOrdenCadena1("hola", "Adios");
-                assertEquals(Ordenacion.MAYOR, result);
+                assertEquals(Ordenacion.POSTERIOR, result);
 
                 result = HelloEnumsApp.obtenerOrdenCadena1("Adios", "hola");
-                assertEquals(Ordenacion.MENOR, result);
+                assertEquals(Ordenacion.ANTERIOR, result);
 
                 result = HelloEnumsApp.obtenerOrdenCadena1("casa", "casa");
                 assertEquals(Ordenacion.IGUAL, result);
 
                 result = HelloEnumsApp.obtenerOrdenCadena1("Avion", "zorro");
-                assertEquals(Ordenacion.MENOR, result);
+                assertEquals(Ordenacion.ANTERIOR, result);
 
                 result = HelloEnumsApp.obtenerOrdenCadena1("Alba", "Albania");
-                assertEquals(Ordenacion.MAYOR, result);
+                assertEquals(Ordenacion.POSTERIOR, result);
 
                 result = HelloEnumsApp.obtenerOrdenCadena1("Albania", "Alba");
-                assertEquals(Ordenacion.MENOR, result);
+                assertEquals(Ordenacion.ANTERIOR, result);
 
                 result = HelloEnumsApp.obtenerOrdenCadena1("zebra", "zzz");
-                assertEquals(Ordenacion.MENOR, result);
+                assertEquals(Ordenacion.ANTERIOR, result);
 
 
         }
