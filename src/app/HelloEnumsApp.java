@@ -1,7 +1,11 @@
+package app;
+
+import enums.Ordenacion;
+
 public class HelloEnumsApp {
     public static void main(String[] args) {
         //ENTENDIENDO LAS ENUMERACIONES
-        /*Demarcacion portero = Demarcacion.PORTERO;
+        /* Demarcacion portero = Demarcacion.PORTERO;
 
         System.out.println(portero);
 
@@ -16,13 +20,13 @@ public class HelloEnumsApp {
         String adios = "Adios";
 
 
-        Ordenacion ordenacion = obtenerOrdenCadena1("hola", "Alba");
+        Ordenacion ordenacion = obtenerOrdenCadena1("hola", "Adios");
         System.out.println(ordenacion);
 
 
     }
 
-    private static Ordenacion obtenerOrdenCadena1(String cadena1, String cadena2){
+    public static Ordenacion obtenerOrdenCadena1(String cadena1, String cadena2){
         boolean isGreater;
         if (!cadena1.equalsIgnoreCase(cadena2)){
             isGreater = isGreaterString1ThanString2(cadena1,cadena2);
@@ -34,7 +38,7 @@ public class HelloEnumsApp {
     }
 
 
-    private static boolean isGreaterString1ThanString2(String cadena1, String cadena2) {
+    public static boolean isGreaterString1ThanString2(String cadena1, String cadena2) {
         char[] carsCad1 = cadena1.toCharArray();
         int numCarsCad1 = cadena1.length();
 

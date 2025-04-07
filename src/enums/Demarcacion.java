@@ -1,3 +1,3 @@
-public enum Demarcacion {
+/*public enum Demarcacion {
     PORTERO, DEFENSA, MEDIOCENTRO, DELANTERO
-}
+}*/
