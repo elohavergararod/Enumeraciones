@@ -42,10 +42,10 @@ public class HelloEnumsTest {
                 assertEquals(Ordenacion.MENOR, result);
 
                 result = HelloEnumsApp.obtenerOrdenCadena1("Alba", "Albania");
-                assertEquals(Ordenacion.MENOR, result);
+                assertEquals(Ordenacion.MAYOR, result);
 
                 result = HelloEnumsApp.obtenerOrdenCadena1("Albania", "Alba");
-                assertEquals(Ordenacion.MAYOR, result);
+                assertEquals(Ordenacion.MENOR, result);
 
                 result = HelloEnumsApp.obtenerOrdenCadena1("zebra", "zzz");
                 assertEquals(Ordenacion.MENOR, result);

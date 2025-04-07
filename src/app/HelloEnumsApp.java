@@ -20,7 +20,7 @@ public class HelloEnumsApp {
         String adios = "Adios";
 
 
-        Ordenacion ordenacion = obtenerOrdenCadena1("hola", "Adios");
+        Ordenacion ordenacion = obtenerOrdenCadena1("zzz", "zebra");
         System.out.println(ordenacion);
 
 
@@ -60,11 +60,11 @@ public class HelloEnumsApp {
             posCurrentChar++;
         }
 
-        if (posCurrentChar == numMaxChar) {
-            return numCarsCad1 > numCarsCad2;
-        }
+        /*if (posCurrentChar == numMaxChar) {
+            return numCarsCad1 < numCarsCad2;
+        }*/
 
-        return true;
+        return numCarsCad1 < numCarsCad2;
     }
 
 }
